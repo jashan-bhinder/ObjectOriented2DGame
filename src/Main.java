@@ -10,7 +10,7 @@ public class Main extends Application {
 
         WorldGeneration world = new WorldGeneration(scene);
 
-        Player player = new Player(100, 450, 20, scene);
+        Player player = new Player(100, 450, 20, scene, world);
 
 
         world.getRoot().getChildren().add(player.getCircle());

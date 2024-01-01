@@ -5,13 +5,14 @@ import javafx.scene.Scene;
 
 public class WorldGeneration {
     private Group root;
+    private Rectangle ground;
 
     public WorldGeneration(Scene scene) {
         root = new Group();
 
         double groundY = 500;
 
-        Rectangle ground = new Rectangle(0, groundY,0 ,0);
+        ground = new Rectangle(0, groundY,0 ,0);
         ground.setFill(Color.GREEN);
 
         ground.widthProperty().bind(scene.widthProperty());
@@ -21,6 +22,9 @@ public class WorldGeneration {
     }
 
     public Group getRoot() {
-        return root;  // Return the world as a JavaFX node
+        return root;
+    }
+    public Rectangle getGround() {
+        return ground;
     }
 }
