@@ -11,7 +11,7 @@ public class WorldGeneration {
 
         double groundY = 500;
 
-        Rectangle ground = new Rectangle(0, groundY, 800, 100);
+        Rectangle ground = new Rectangle(0, groundY,0 ,0);
         ground.setFill(Color.GREEN);
 
         ground.widthProperty().bind(scene.widthProperty());
