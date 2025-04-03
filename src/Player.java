@@ -5,7 +5,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.Scene;
 import java.util.HashSet;
 import java.util.Set;
-
+//this class has mostly been about designing and learning how to do movement however instead I will start splitting this class
 public class Player {
     private Circle circle;
     private double velocityY = 0;
